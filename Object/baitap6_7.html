@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập 6-7</title>
+</head>
+<body>
+    <form action="#">
+        <label for="bookId">BookId:</label>
+        <input type="text" name="bookId" id="bookId"><br>
+        <label for="bookName">BookName:</label>
+        <input type="text" name="bookName" id="bookName"><br>
+        <label for="price">Price:</label>
+        <input type="number" name="price" id="price"><br>
+        <label for="author">Author:</label>
+        <input type="text" name="author" id="author"><br>
+        <label for="bookStatus">BookStatus:</label>
+        <input type="radio" name="bookStatus" id="active" value="active"><label for="active" checked>Active</label>
+        <input type="radio" name="bookStatus" id="InActive" value="inActive"><label for="inActive">InActive</label><br>
+        <input type="submit" value="Submit" id="btnSubmit">
+    </form>
+    <div>
+
+    </div>
+    <div>
+        <label for="searchBookName">BookName</label>
+        <input type="text" name="searchBookName" id="searchBookName">
+        <button id="btnSearch">Search</button>
+        <button id="btnSort">Sort  by Price</button>
+    </div>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>BookId</th>
+                <th>BookName</th>
+                <th>Price</th>
+                <th>Author</th>
+                <th>BookStatus</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="content">
+
+        </tbody>
+    </table>
+    <script src="./baitap6-7.js"></script>
+</body>
+</html>
